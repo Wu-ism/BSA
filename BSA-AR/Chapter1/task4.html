@@ -9,8 +9,8 @@
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: #311C6B; /* BrightSign Purple Background */
-            color: white;
+            background-color: #E5E1F0; /* Digital Purple Background */
+            color: #311C6B; /* BrightSign Purple for Text */
             margin: 0;
             padding: 0;
             display: flex;
@@ -21,7 +21,7 @@
         header {
             background: linear-gradient(135deg, #701896, #311C6B); /* Gradient background */
             color: white;
-            padding: 10px;
+            padding: 20px;
             text-align: center;
             position: sticky;
             top: 0;
@@ -35,18 +35,22 @@
         }
 
         .container {
-            width: 880px;
-            min-height: 490px;
-            padding: 20px 10px;
+            width: 100%;
+            max-width: 1200px;
             margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         h2 {
-            font-size: 24px;
-            border-bottom: 1px solid #0f92ae;
+            font-size: 28px;
+            border-bottom: 1px solid #49C0FF; /* Highlighter Blue */
             text-align: center;
             padding-bottom: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            color: #311C6B;
         }
 
         iframe {
@@ -57,23 +61,41 @@
         }
 
         table {
-            width: 95%;
+            width: 100%;
             margin: 20px auto;
-            color: white;
+            color: #311C6B;
+            border-spacing: 0;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
         }
 
         td {
-            padding: 10px;
+            padding: 20px;
             text-align: left;
-            font-size: 14px;
+            font-size: 16px;
             line-height: 1.6;
         }
 
+        strong {
+            color: #701896; /* Ultraviolet for emphasis */
+        }
+
         hr {
-            border: 1px solid #f48377;
-            width: 100%;
+            border: none;
+            height: 1px;
+            background-color: #49C0FF; /* Highlighter Blue */
             margin: 20px 0;
         }
+
+        .footer {
+            margin-top: auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #311C6B;
+            color: white;
+        }
+
     </style>
 </head>
 <body>
@@ -81,7 +103,7 @@
     <header>
         <h1>Digital Needs Assessment</h1>
     </header>
-    <hr />
+
     <div class="container">
         <h2>Video Overview</h2>
         <iframe src="https://player.vimeo.com/video/729359053" allowfullscreen></iframe>
@@ -102,6 +124,10 @@
                 </tr>
             </tbody>
         </table>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 BrightSign Authorized Reseller Program</p>
     </div>
 
 </body>

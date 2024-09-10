@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reprovision Player</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+        }
+
+        body {
+            background-color: #311C6B;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 24pt;
+            font-weight: bold;
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        p, li {
+            font-size: 14pt;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            padding-left: 40px;
+        }
+
+        a {
+            color: #49C0FF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #701896;
+        }
+
+        .content-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            color: #333333;
+            max-width: 900px;
+            width: 100%;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        #header-image {
+            background-image: url("https://brightsignacademy.smarteru.com/TaskItems/39852/step5.png");
+            height: 86px;
+            width: 190px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        table {
+            width: 95%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+        }
+
+        .highlight {
+            font-size: 18pt;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="content-container">
+    <div id="header-image"></div>
+
+    <h1>Reprovision Player</h1>
+
+    <p>If the player has already been provisioned, there should be a provisioning record in your BSN.cloud network with an affiliated Device Setup package. In various scenarios, there may be a reason to change how your player was set up, or some element of the setup package itself could be causing an issue. For instance, you may want to change the device type to a partner application or add a WiFi module with SSID to a player. For changes like these, you will need to create a new setup package with the appropriate settings and reprovision the device. Creating a new setup package and applying it to the player is also an extremely effective troubleshooting technique that can often resolve an issue.</p>
+
+    <p><strong>Note:</strong> If you are using a custom network configuration other than DHCP (like a static IP, proxy, etc.), be sure to choose “Use Current Device Settings” when creating the new Device Setup.</p>
+
+    <p>After you have created a new setup package with your changed settings, or updated the previous settings, save it to the Device Setup Library. Once you’ve done that, assign the newly created setup package to the player under <strong>Admin > Device Provisioning > Select Device > Apply Setup</strong>.</p>
+
+    <p><a href="https://brightsignacademy.smarteru.com/TaskItems/39852/device%20provisioning.png" target="_blank" rel="noopener"><img src="https://brightsignacademy.smarteru.com/TaskItems/39852/device provisioning.png" alt="Device Provisioning" width="438" height="287"></a></p>
+
+    <p>If the player is connected to BSN.cloud, Control Cloud, select the player from the network tab, press the cog icon, navigate to control, and then press “Update” in the Reprovision Device section.</p>
+
+    <p>If the player isn't connected to BSN.cloud, there are other offline ways to reprovision the device, but we suggest connecting the players to a BSN.cloud network.</p>
+
+    <p>Once the reprovisioning is complete, check to see if this step resolved the issue.</p>
+</div>
+
+</body>
+</html>
