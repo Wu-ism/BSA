@@ -4,132 +4,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frequently Asked Questions</title>
+    <!-- Google Font: Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        * {
-            padding: 0;
-            margin: 0;
-            font-family: Verdana, sans-serif;
-            font-size: 14px;
-        }
-
         body {
-            background-color: #311c6b;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #E5E1F0; /* Digital Purple Background */
+            color: #311C6B; /* BrightSign Purple for Text */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(135deg, #701896, #311C6B); /* Gradient background */
+            color: white;
             padding: 10px;
-        }
-
-        #container {
-            min-width: 900px;
-            min-height: 490px;
-            background: url('http://brightsignacademy.smarteru.com/TaskItems/37464/title-background-sized.jpg') no-repeat center center;
-            background-color: #d0d3d4;
-            position: relative;
-        }
-
-        table {
-            width: 95%;
-            margin: 20px auto;
-            background-color: white;
-            padding: 20px;
-            border-radius: 5px;
-        }
-
-        td {
-            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         h1 {
-            text-align: center;
-            color: #333;
-            font-size: 24pt;
+            font-size: 36px; /* Title size */
+            font-weight: bold;
             margin-bottom: 20px;
         }
 
-        p {
-            color: #000;
+        .container {
+            width: 900px;
+            min-height: 490px;
+            padding: 20px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 10px;
+            color: #333333;
+        }
+
+        p, li {
+            font-size: 18px;
+            line-height: 1.6;
             margin-bottom: 20px;
         }
 
-        ul, li {
-            list-style-position: inside;
-            margin-left: 20px;
-            color: #000;
+        ul {
+            padding-left: 40px;
         }
 
         a {
-            color: #333;
+            color: #49C0FF; /* Highlighter Blue */
             text-decoration: none;
         }
 
         a:hover {
-            color: #701896;
+            color: #701896; /* Ultraviolet when hovered */
         }
 
         .sub-title {
             font-weight: bold;
             font-size: 18px;
             margin-bottom: 10px;
+            cursor: pointer;
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
         }
 
         .content {
             padding-left: 30px;
+            display: none;
+        }
+
+        hr {
+            border: 1px solid #f48377;
+            width: 100%;
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
-    <div id="container">
-        <table>
-            <tbody>
-                <tr>
-                    <td>
-                        <h1>Frequently Asked Questions</h1>
-                        
-                        <p><span class="sub-title">I am brand new to BrightSign and I don’t know where to start. Can you help me?</span></p>
-                        <p class="content">Sure! Visit our <a href="https://www.brightsign.biz/nl/support/quickstart" target="_blank" rel="noopener">quick start guide</a>.</p>
 
-                        <p><span class="sub-title">How do I set up a player using the web interface?</span></p>
-                        <p class="content">Setting up a player using the web interface is similar to using the desktop client. If you are setting up manually (saving setup files to a microSD card), you must use the desktop client. The web client supports only remote device activation and provisioning.</p>
+    <header>
+        <h1>Frequently Asked Questions</h1>
+    </header>
+    <hr />
 
-                        <p><span class="sub-title">I have an older player. How do I connect it to BSN.cloud?</span></p>
-                        <p class="content">For players running BrightSign OS 8 or below, update to the latest Production Release. Download the update package from <a href="http://BrightSign.biz/downloads" target="_blank" rel="noopener">BrightSign.biz/downloads</a>, save the contents to a blank exFAT or FAT32 formatted microSD card, insert it into the player, and press reset. The player will reboot several times to install the update. After installation, you should see the purple activation screen.</p>
+    <div class="container">
+        <p class="sub-title" onclick="toggleAnswer(1)">I am brand new to BrightSign and I don’t know where to start. Can you help me?</p>
+        <div class="content" id="answer1">
+            Sure! Visit our <a href="https://www.brightsign.biz/nl/support/quickstart" target="_blank" rel="noopener">quick start guide</a>.
+        </div>
 
-                        <p><span class="sub-title">I powered the player and plugged it into a display, but I see a blank screen. What should I do?</span></p>
-                        <p class="content">Ensure you have a known working environment. Check power, cables, network, displays, inputs/outputs. If the player isn't connected to the internet, you should see the white on-device setup. If connected, you should see the purple activation screen. If the screen is blank, the player may have been provisioned automatically. Try publishing a presentation to the player.</p>
+        <p class="sub-title" onclick="toggleAnswer(2)">How do I set up a player using the web interface?</p>
+        <div class="content" id="answer2">
+            Setting up a player using the web interface is similar to using the desktop client. If you are setting up manually (saving setup files to a microSD card), you must use the desktop client. The web client supports only remote device activation and provisioning.
+        </div>
 
-                        <p><span class="sub-title">I see a purple screen with a QR code. How do I set up my player?</span></p>
-                        <p class="content">Follow the on-screen instructions and visit <a href="https://bsn.cloud/activate" target="_blank" rel="noopener">bsn.cloud/activate</a> (use Chrome). You can set up a player network, and once the setup is complete, publish a presentation to the default player group.</p>
+        <p class="sub-title" onclick="toggleAnswer(3)">I have an older player. How do I connect it to BSN.cloud?</p>
+        <div class="content" id="answer3">
+            For players running BrightSign OS 8 or below, update to the latest Production Release. Download the update package from <a href="http://BrightSign.biz/downloads" target="_blank" rel="noopener">BrightSign.biz/downloads</a>, save the contents to a blank exFAT or FAT32 formatted microSD card, insert it into the player, and press reset. The player will reboot several times to install the update. After installation, you should see the purple activation screen.
+        </div>
 
-                        <p><span class="sub-title">I see the on-device setup screen. What should I do?</span></p>
-                        <p class="content">The player may not be able to connect to the internet, possibly due to a firewall or network configuration. Check the network settings or use an Ethernet connection.</p>
+        <p class="sub-title" onclick="toggleAnswer(4)">I powered the player and plugged it into a display, but I see a blank screen. What should I do?</p>
+        <div class="content" id="answer4">
+            Ensure you have a known working environment. Check power, cables, network, displays, inputs/outputs. If the player isn't connected to the internet, you should see the white on-device setup. If connected, you should see the purple activation screen. If the screen is blank, the player may have been provisioned automatically. Try publishing a presentation to the player.
+        </div>
 
-                        <p><span class="sub-title">How do I add a device to my network?</span></p>
-                        <p class="content">You can add a device using the activation code on the purple screen or by manually adding it under "Device Provisioning" in BrightAuthor:connected, where you'll need the player's serial number.</p>
+        <p class="sub-title" onclick="toggleAnswer(5)">I see a purple screen with a QR code. How do I set up my player?</p>
+        <div class="content" id="answer5">
+            Follow the on-screen instructions and visit <a href="https://bsn.cloud/activate" target="_blank" rel="noopener">bsn.cloud/activate</a> (use Chrome). You can set up a player network, and once the setup is complete, publish a presentation to the default player group.
+        </div>
 
-                        <p><span class="sub-title">The player still plays old content after a factory reset. What should I do?</span></p>
-                        <p class="content">Delete the provisioning record from your network under "Device Provisioning." Otherwise, the player will self-activate and play the previously published content.</p>
+        <p class="sub-title" onclick="toggleAnswer(6)">I see the on-device setup screen. What should I do?</p>
+        <div class="content" id="answer6">
+            The player may not be able to connect to the internet, possibly due to a firewall or network configuration. Check the network settings or use an Ethernet connection.
+        </div>
 
-                        <p><span class="sub-title">I lost access because the person who set up the player left. What should I do?</span></p>
-                        <p class="content">Unfortunately, BrightSign can't delete a provisioning record due to privacy concerns, but we can help you regain access to the BSN.cloud account/network to manage the device.</p>
+        <p class="sub-title" onclick="toggleAnswer(7)">How do I add a device to my network?</p>
+        <div class="content" id="answer7">
+            You can add a device using the activation code on the purple screen or by manually adding it under "Device Provisioning" in BrightAuthor:connected, where you'll need the player's serial number.
+        </div>
 
-                        <p><span class="sub-title">I am using a partner application CMS and having issues. What should I do?</span></p>
-                        <p class="content">If you're using a third-party CMS like Appspace or Signagelive, contact their support staff for assistance.</p>
+        <p class="sub-title" onclick="toggleAnswer(8)">The player still plays old content after a factory reset. What should I do?</p>
+        <div class="content" id="answer8">
+            Delete the provisioning record from your network under "Device Provisioning." Otherwise, the player will self-activate and play the previously published content.
+        </div>
 
-                        <p><span class="sub-title">I forgot my credentials. How do I log in to my BSN.cloud account?</span></p>
-                        <p class="content">On the login page, click "Forgot Password" and follow the instructions to reset your credentials.</p>
+        <p class="sub-title" onclick="toggleAnswer(9)">I lost access because the person who set up the player left. What should I do?</p>
+        <div class="content" id="answer9">
+            Unfortunately, BrightSign can't delete a provisioning record due to privacy concerns, but we can help you regain access to the BSN.cloud account/network to manage the device.
+        </div>
 
-                        <p><span class="sub-title">I published a presentation, but it’s not playing on the device. What should I do?</span></p>
-                        <p class="content">Ensure the player is active in the network. Use the network tab to check the player's output and confirm the presentation is being sent. Make sure you published the presentation to the correct player group.</p>
+        <p class="sub-title" onclick="toggleAnswer(10)">I am using a partner application CMS and having issues. What should I do?</p>
+        <div class="content" id="answer10">
+            If you're using a third-party CMS like Appspace or Signagelive, contact their support staff for assistance.
+        </div>
 
-                        <p><span class="sub-title">I got a 30-day free trial, but I can’t update the content. What should I do?</span></p>
-                        <p class="content">Your trial may have expired. You will need to purchase a subscription to continue using the Content Cloud.</p>
+        <p class="sub-title" onclick="toggleAnswer(11)">I forgot my credentials. How do I log in to my BSN.cloud account?</p>
+        <div class="content" id="answer11">
+            On the login page, click "Forgot Password" and follow the instructions to reset your credentials.
+        </div>
 
-                        <p><span class="sub-title">What video, image, and audio formats should I use?</span></p>
-                        <p class="content">For video, use .mp4 with H.264 or H.265 codecs. For HD, use 4000-9000 kbps, and for 4K, use 8000-14000 kbps. <a href="https://support.brightsign.biz/hc/en-us/articles/218065137-Supported-video-formats-and-codecs" target="_blank" rel="noopener">Learn more about supported video formats</a>.</p>
-                        <p class="content">For images, use .jpeg or .png files. <a href="https://support.brightsign.biz/hc/en-us/articles/218065127-Supported-image-formats" target="_blank" rel="noopener">Learn more about supported image formats</a>.</p>
-                        <p class="content">For audio, use .mp3 or .wav files. <a href="https://support.brightsign.biz/hc/en-us/articles/218065147-Supported-audio-formats" target="_blank" rel="noopener">Learn more about supported audio formats</a>.</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <p class="sub-title" onclick="toggleAnswer(12)">I published a presentation, but it’s not playing on the device. What should I do?</p>
+        <div class="content" id="answer12">
+            Ensure the player is active in the network. Use the network tab to check the player's output and confirm the presentation is being sent. Make sure you published the presentation to the correct player group.
+        </div>
+
+        <p class="sub-title" onclick="toggleAnswer(13)">I got a 30-day free trial, but I can’t update the content. What should I do?</p>
+        <div class="content" id="answer13">
+            Your trial may have expired. You will need to purchase a subscription to continue using the Content Cloud.
+        </div>
+
+        <p class="sub-title" onclick="toggleAnswer(14)">What video, image, and audio formats should I use?</p>
+        <div class="content" id="answer14">
+            For video, use .mp4 with H.264 or H.265 codecs. For HD, use 4000-9000 kbps, and for 4K, use 8000-14000 kbps. <a href="https://support.brightsign.biz/hc/en-us/articles/218065137-Supported-video-formats-and-codecs" target="_blank" rel="noopener">Learn more about supported video formats</a>.
+            <br /><br />
+            For images, use .jpeg or .png files. <a href="https://support.brightsign.biz/hc/en-us/articles/218065127-Supported-image-formats" target="_blank" rel="noopener">Learn more about supported image formats</a>.
+            <br /><br />
+            For audio, use .mp3 or .wav files. <a href="https://support.brightsign.biz/hc/en-us/articles/218065147-Supported-audio-formats" target="_blank" rel="noopener">Learn more about supported audio formats</a>.
+        </div>
     </div>
+
+    <script>
+        function toggleAnswer(id) {
+            const answer = document.getElementById('answer' + id);
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+            } else {
+                answer.style.display = 'none';
+            }
+        }
+    </script>
+
 </body>
 </html>
