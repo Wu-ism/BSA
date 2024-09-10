@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Needs Assessment</title>
+    <!-- Google Font: Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #311C6B; /* BrightSign Purple Background */
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(135deg, #701896, #311C6B); /* Gradient background */
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        h1 {
+            font-size: 36px; /* Title size */
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            width: 880px;
+            min-height: 490px;
+            padding: 20px 10px;
+            margin: 20px auto;
+        }
+
+        h2 {
+            font-size: 24px;
+            border-bottom: 1px solid #0f92ae;
+            text-align: center;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 506px;
+            margin-bottom: 20px;
+            border: none;
+        }
+
+        table {
+            width: 95%;
+            margin: 20px auto;
+            color: white;
+        }
+
+        td {
+            padding: 10px;
+            text-align: left;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        hr {
+            border: 1px solid #f48377;
+            width: 100%;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Digital Needs Assessment</h1>
+    </header>
+    <hr />
+    <div class="container">
+        <h2>Video Overview</h2>
+        <iframe src="https://player.vimeo.com/video/729359053" allowfullscreen></iframe>
+
+        <h2>Project Planning</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        Before you begin a project, it's essential to interview the client about their specific needs. Ask questions about the following topics to develop an accurate quote for the required materials (components, software, hardware, and networking) and the labor necessary to bring their vision to life. Proper scoping of the project will help you provide a precise quote.
+                        <br /><br />
+                        For example, if the deployment requires 5 players or fewer, we recommend automatically provisioning players via the purple screen. You will learn how to use this method in the following exercise. However, if you need to provision many players, we offer bulk provisioning tools you can use.
+                        <br /><br />
+                        Another example would be a customer who wants to use a specific partner application. It's easy to set up a network to automatically provision a player to run on a preferred CMS when the player is added to the network.
+                        <br /><br />
+                        <strong>Bottom line:</strong> Upfront planning of a deployment will help you sell more players and support more customers in the long run.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
