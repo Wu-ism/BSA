@@ -1,0 +1,170 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E5E1F0; /* Digital Purple Background */
+    color: #311C6B; /* BrightSign Purple for Text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(135deg, #701896, #311C6B); /* Gradient background */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+h1 {
+    font-size: 36px; /* Title size */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container {
+    flex: 1;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    max-width: 1200px; /* Container size */
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-content {
+    width: 50%;
+}
+
+ul {
+    margin-bottom: 40px;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+hr {
+    border: 1px solid #f48377;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.image-container {
+    width: 50%; /* Allocate half space for the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -720px; /* Adjust the margin to move the image up */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+        /* Home button styling */
+        .home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #701896; /* Ultraviolet */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.home-button:hover {
+    background-color: #311C6B; /* BrightSign Purple on hover */
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 40px;
+}
+.email-button {
+    background-color: #49C0FF; /* Highlighter Blue */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.email-button:hover {
+    background-color: #701896; /* Ultraviolet when hovered */
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E5E1F0; /* Digital Purple Background */
+    color: #333333; /* Dark Gray for text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(135deg, #701896, #311C6B); /* Gradient background */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+h1 {
+    font-size: 36px; /* Title size */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 880px;
+    min-height: 490px;
+    padding: 20px 10px;
+    margin: auto;
+}
+
+table {
+    width: 95%;
+    margin: 20px auto;
+    color: #333333; /* Dark Gray for text */
+}
+
+td {
+    padding: 10px;
+}
+
+a {
+    color: #49C0FF; /* Highlighter Blue for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.price-icon {
+    font-size: 36pt;
+    color: #333333; /* Dark Gray for text */
+}
+
+hr {
+    border: 1px solid #f48377;
+    width: 100%;
+    margin: 20px 0;
+}
