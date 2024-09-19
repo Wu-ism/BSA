@@ -13,15 +13,12 @@
             color: #311C6B; /* BrightSign Purple for Text */
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
         }
 
         header {
             background: linear-gradient(135deg, #701896, #311C6B); /* Gradient background */
             color: white;
-            padding: 10px;
+            padding: 20px;
             text-align: center;
             position: sticky;
             top: 0;
@@ -31,80 +28,108 @@
         h1 {
             font-size: 36px; /* Title size */
             font-weight: bold;
-            margin-bottom: 10px;
+            margin: 0;
         }
 
         .container {
-            flex: 1;
-            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1200px;
             margin: auto;
             padding: 20px;
-            max-width: 1200px; /* Container size */
-            display: flex;
-            justify-content: space-between;
+        }
+
+        .text-content, .image-container {
+            flex: 1 1 45%;
+            box-sizing: border-box;
+            margin-bottom: 20px;
         }
 
         .text-content {
-            width: 50%;
+            padding-right: 20px;
         }
 
         ul {
-            margin-bottom: 40px;
+            padding-left: 20px;
         }
 
         li {
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
 
         hr {
             border: 1px solid #f48377;
-            width: 100%;
             margin: 20px 0;
-        }
-
-        .image-container {
-            width: 50%; /* Allocate half space for the image */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: -720px; /* Adjust the margin to move the image up */
         }
 
         img {
             max-width: 100%;
             height: auto;
+            display: block;
+            margin: auto;
         }
 
-                /* Home button styling */
-                .home-button {
-            display: inline-block;
-            padding: 10px 20px;
+        /* Button styles */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .button-container a {
             background-color: #701896; /* Ultraviolet */
             color: white;
+            padding: 10px 20px;
             font-size: 16px;
             font-weight: bold;
             text-decoration: none;
             border-radius: 5px;
-            margin-top: 20px;
-            text-align: center;
+            margin: 0 5px;
+            display: inline-block;
+            cursor: pointer;
         }
 
-        .home-button:hover {
+        .button-container a:hover {
             background-color: #311C6B; /* BrightSign Purple on hover */
         }
 
-        .button-container {
-            text-align: center;
-            margin-top: 40px;
+        /* Specific styles for email button */
+        .email-button {
+            background-color: #49C0FF; /* Highlighter Blue */
         }
 
+        .email-button:hover {
+            background-color: #701896; /* Ultraviolet when hovered */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .text-content, .image-container {
+                flex: 1 1 100%;
+                padding-right: 0;
+            }
+
+            .button-container {
+                flex-direction: column;
+            }
+
+            .button-container a {
+                margin: 5px 0;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>BrightSign Authorized Reseller Program</h1>
+        <h1>Task 1: Authorized Reseller Program Overview</h1>
+        <div class="button-container">
+            <a href="/index.html" class="home-button">Home</a>
+            <a href="mailto:cwu@brightsign.biz?subject=BSA-AR%20feedback&body=please include task#" class="email-button">Send Feedback</a>
+        </div>
     </header>
-    <hr />
     <div class="container">
         <div class="text-content">
             <p>This course covers:</p>
@@ -115,18 +140,37 @@
                 <li>Account Setup</li>
                 <li>Basic Player Setup</li>
                 <li>Provisioning with a Partner Application</li>
-                <li>Publishing to a player for the first time</li>
+                <li>Publishing to a Player for the First Time</li>
                 <li>Reseller Obligations</li>
                 <li>Sales and Orders</li>
-                <li>Training</li>
+                <li>Training Resources</li>
             </ul>
             <hr />
-            <p>
-                In this chapter, we'll cover player pricing, our Minimum Advertised Price (MAP) policy, assessing customer needs, the basics of player setup and content publishing, your obligations as a reseller, ordering products, and training resources.
-            </p>
-            <p>
-                Following this chapter is a section on BrightSign support and a brief quiz. Upon completion of this course, you'll become a BrightSign Authorized Reseller.
-            </p>
+            <p>In this chapter, we'll cover:</p>
+            <ul>
+                <li>Player pricing and our Minimum Advertised Price (MAP) policy</li>
+                <li>Conducting a Digital Needs Assessment to understand client requirements</li>
+                <li>The basics of player setup and content publishing</li>
+                <li>Your obligations as a BrightSign reseller</li>
+                <li>Ordering products and managing sales</li>
+                <li>Available training resources for ongoing learning</li>
+            </ul>
+            <hr />
+            <h2>Understanding Customer Needs in the AV Industry</h2>
+            <p>Conducting a thorough needs assessment is crucial for designing, implementing, and supporting effective AV solutions for your clients. As a BrightSign Authorized Reseller, you should be familiar with the following steps in the needs assessment process:</p>
+            <ol>
+                <li><strong>Identify Stakeholders and Decision-makers:</strong> Engage with key personnel such as executives, IT managers, and facilities managers to understand their requirements and expectations.</li>
+                <li><strong>Assess End Users' Skill Level:</strong> Determine the technical proficiency of the end users to tailor AV solutions that are user-friendly and match their capabilities.</li>
+                <li><strong>Educate the AV Client:</strong> Provide comprehensive information about AV technologies and best practices to help clients make informed decisions.</li>
+                <li><strong>Review the Client's Technology Master Plan:</strong> Align AV solutions with the client's long-term technology goals and strategies.</li>
+                <li><strong>Determine the Client's Procurement Process:</strong> Understand the client's purchasing procedures, budget considerations, and approval processes to facilitate smooth transactions.</li>
+                <li><strong>Research the Client's Business Process:</strong> Study the client's workflows and how AV technology will be utilized within their operations.</li>
+                <li><strong>Research the Client's Business Environment:</strong> Analyze industry trends, market challenges, and regulatory factors that may impact AV implementation.</li>
+                <li><strong>Define AV Needs:</strong> Identify the specific AV requirements, including system functionalities and performance characteristics needed to meet the client's objectives.</li>
+                <li><strong>Identify the Scope of Work:</strong> Clearly outline the project's boundaries, deliverables, timelines, and resource requirements.</li>
+                <li><strong>Identify Regulatory Requirements and Certifications:</strong> Ensure compliance with relevant regulations, standards, and certifications applicable to AV projects.</li>
+            </ol>
+            <p>By following these steps, you can effectively assess your clients' needs and provide tailored AV solutions that enhance customer satisfaction and contribute to successful projects.</p>
             <p><strong>Please send the certificate of completion to your distributor as proof of your Authorized Reseller status.</strong></p>
         </div>
         <div class="image-container">

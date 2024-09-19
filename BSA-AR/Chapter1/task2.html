@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Player Pricing</title>
+    <title>Minimum Advertised Price Policy</title>
     <!-- Google Font: Montserrat -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -13,8 +13,6 @@
             color: #333333; /* Dark Gray for text */
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
             min-height: 100vh;
         }
 
@@ -34,35 +32,70 @@
             margin-bottom: 10px;
         }
 
+        /* Button container and styles */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .button-container a {
+            background-color: #701896; /* Ultraviolet */
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 5px;
+            display: inline-block;
+        }
+
+        .button-container a:hover {
+            background-color: #311C6B; /* BrightSign Purple on hover */
+        }
+
+        .email-button {
+            background-color: #49C0FF; /* Highlighter Blue */
+        }
+
+        .email-button:hover {
+            background-color: #701896; /* Ultraviolet when hovered */
+        }
+
         .container {
-            width: 880px;
-            min-height: 490px;
+            max-width: 880px;
             padding: 20px 10px;
             margin: auto;
         }
 
-        table {
-            width: 95%;
-            margin: 20px auto;
-            color: #333333; /* Dark Gray for text */
+        .content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
         }
 
-        td {
-            padding: 10px;
+        p {
+            margin-bottom: 15px;
+            line-height: 1.6;
         }
 
-        a {
+        ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a.content-link {
             color: #49C0FF; /* Highlighter Blue for links */
             text-decoration: none;
         }
 
-        a:hover {
+        a.content-link:hover {
             text-decoration: underline;
-        }
-
-        .price-icon {
-            font-size: 36pt;
-            color: #333333; /* Dark Gray for text */
         }
 
         hr {
@@ -70,27 +103,67 @@
             width: 100%;
             margin: 20px 0;
         }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .button-container {
+                flex-direction: column;
+            }
+
+            .button-container a {
+                margin: 5px 0;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Player Pricing</h1>
+        <h1>Task 2: Minimum Advertised Price Policy</h1>
+        <div class="button-container">
+            <a href="index.html">Home</a>
+            <a href="mailto:cwu@brightsign.biz?subject=BSA-AR%20feedback&body=please include task#" class="email-button">Send Feedback</a>
+        </div>
     </header>
     <hr />
-    <div id="container">
-        <table>
-            <tbody>
-                <tr>
-                    <td width="86%">
-                        BrightSign implements a Minimum Advertised Price (MAP) policy to ensure fair competition and brand integrity. As an Authorized Reseller, you are required to follow this policy by advertising BrightSign products at or above the minimum pricing level. 
-                        The MAP for all BrightSign products must not be lower than the official prices published on BrightSign's <a href="https://www.brightsign.biz/legal/map-policy">MAP policy page</a>. Pricing can fluctuate, so it’s essential to verify the most current prices before quoting. You can review the latest pricing <a href="https://www.brightsign.biz/legal/map-policy">here</a>.
-                    </td>
-                    <td width="14%" style="text-align: center;">
-                        <strong class="price-icon">$</strong>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="container">
+        <div class="content">
+            <p>
+                BrightSign has implemented a <strong>Minimum Advertised Price (MAP) Policy</strong> to protect the investments of our resellers and maintain the integrity of our brand. This policy requires all resellers to advertise BrightSign products at or above 100% of the list prices as listed on BrightSign’s official web store.
+            </p>
+            <p>
+                <strong>Key Points of the MAP Policy:</strong>
+            </p>
+            <ul>
+                <li>
+                    The policy applies to all resellers advertising BrightSign products online, including websites, email campaigns, third-party platforms, and printed media.
+                </li>
+                <li>
+                    Resellers must not advertise prices lower than the official list prices. Current pricing can be found on the <a href="https://www.brightsign.biz/legal/map-policy" class="content-link">MAP policy page</a>.
+                </li>
+                <li>
+                    While the MAP Policy governs advertised prices, resellers are free to set their actual resale prices. This means you can sell products at any price, but advertised prices must comply with the MAP Policy.
+                </li>
+                <li>
+                    If a reseller violates the MAP Policy, BrightSign may take actions such as canceling orders, restricting future orders, or suspending the reseller's account.
+                </li>
+                <li>
+                    Resellers are required to inform any third-party internet sellers of the MAP Policy and notify BrightSign of their contact information.
+                </li>
+                <li>
+                    All questions regarding the MAP Policy should be directed to <a href="mailto:legal@brightsign.biz" class="content-link">legal@brightsign.biz</a>.
+                </li>
+            </ul>
+            <p>
+                BrightSign reserves the right to monitor advertised prices and enforce this policy unilaterally. The MAP Policy is subject to change or cancellation at BrightSign's sole discretion.
+            </p>
+            <p>
+                For detailed information, please review the full MAP Policy on our <a href="https://www.brightsign.biz/legal/map-policy" class="content-link">website</a>.
+            </p>
+        </div>
     </div>
 </body>
 </html>
