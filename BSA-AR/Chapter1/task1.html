@@ -12,12 +12,15 @@
             color: #311C6B; /* BrightSign Purple for Text */
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         header {
             background: linear-gradient(135deg, #701896, #311C6B); /* Gradient background */
             color: white;
-            padding: 20px;
+            padding: 10px;
             text-align: center;
             position: sticky;
             top: 0;
@@ -27,7 +30,7 @@
         h1 {
             font-size: 36px; /* Title size */
             font-weight: bold;
-            margin: 0;
+            margin-bottom: 10px;
         }
 
         .email-button {
@@ -49,24 +52,56 @@
         }
 
         .container {
+            width: 100%;
             max-width: 1200px;
-            margin: auto;
+            margin: 20px auto;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
         }
 
-        h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
+        .box {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        p {
-            font-size: 16px;
+        .box h2 {
+            font-size: 28px;
+            color: #701896; /* Ultraviolet */
+            border-bottom: 1px solid #49C0FF; /* Highlighter Blue */
+            padding-bottom: 10px;
             margin-bottom: 20px;
         }
 
-        hr {
-            border: 1px solid #f48377;
-            margin: 20px 0;
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #49C0FF; /* Highlighter Blue */
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #701896; /* Ultraviolet when hovered */
+        }
+
+        .footer {
+            margin-top: auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #311C6B;
+            color: white;
         }
     </style>
 </head>
@@ -78,38 +113,40 @@
     </header>
 
     <div class="container">
-        <h2>Chapter 1: Introduction to BrightSign and the Reseller Role</h2>
-        <p>Get to know BrightSign and what it means to be an Authorized Reseller. Understand your responsibilities and how digital signage fits into various industries.</p>
-        
-        <hr>
-        
-        <h2>Chapter 2: BrightSign Pricing and Sales Essentials</h2>
-        <p>Learn the basics of BrightSign’s pricing structure and how to manage sales. Discover the Minimum Advertised Price (MAP) policy and how it impacts your business.</p>
-        
-        <hr>
-        
-        <h2>Chapter 3: Assessing Client Needs and Selling Solutions</h2>
-        <p>Master the art of identifying client needs and recommending the right BrightSign solutions. Use consultative selling techniques to ensure your clients get the perfect fit.</p>
-        
-        <hr>
-        
-        <h2>Chapter 4: Setting Up and Configuring BrightSign Players</h2>
-        <p>Learn how to set up BrightSign players step-by-step. From network setup to troubleshooting, we’ve got you covered to ensure a smooth installation process.</p>
-        
-        <hr>
-        
-        <h2>Chapter 5: Creating and Managing Content</h2>
-        <p>Find out how to create and publish content on BrightSign players. Explore tools like BrightAuthor and BSN.cloud to manage digital signage content effectively.</p>
-        
-        <hr>
-        
-        <h2>Chapter 6: Responsibilities and Customer Support</h2>
-        <p>Understand your obligations as a reseller and how to provide great customer service. Learn how to support your clients through installations and product usage.</p>
-        
-        <hr>
-        
-        <h2>Chapter 7: Continuing Your BrightSign Learning Journey</h2>
-        <p>Keep growing with BrightSign! Discover ongoing training resources and how to stay updated with new products and features to keep your skills sharp.</p>
+        <div class="box">
+            <h2>Chapter 1: Introduction to BrightSign and the Reseller Role</h2>
+            <p>Get to know BrightSign and what it means to be an Authorized Reseller. Understand your responsibilities and how digital signage fits into various industries.</p>
+        </div>
+
+        <div class="box">
+            <h2>Chapter 2: BrightSign Pricing and Sales Essentials</h2>
+            <p>Learn the basics of BrightSign’s pricing structure and how to manage sales. Discover the Minimum Advertised Price (MAP) policy and how it impacts your business.</p>
+        </div>
+
+        <div class="box">
+            <h2>Chapter 3: Assessing Client Needs and Selling Solutions</h2>
+            <p>Master the art of identifying client needs and recommending the right BrightSign solutions. Use consultative selling techniques to ensure your clients get the perfect fit.</p>
+        </div>
+
+        <div class="box">
+            <h2>Chapter 4: Setting Up and Configuring BrightSign Players</h2>
+            <p>Learn how to set up BrightSign players step-by-step. From network setup to troubleshooting, we’ve got you covered to ensure a smooth installation process.</p>
+        </div>
+
+        <div class="box">
+            <h2>Chapter 5: Creating and Managing Content</h2>
+            <p>Find out how to create and publish content on BrightSign players. Explore tools like BrightAuthor and BSN.cloud to manage digital signage content effectively.</p>
+        </div>
+
+        <div class="box">
+            <h2>Chapter 6: Responsibilities and Customer Support</h2>
+            <p>Understand your obligations as a reseller and how to provide great customer service. Learn how to support your clients through installations and product usage.</p>
+        </div>
+
+        <div class="box">
+            <h2>Chapter 7: Continuing Your BrightSign Learning Journey</h2>
+            <p>Keep growing with BrightSign! Discover ongoing training resources and how to stay updated with new products and features to keep your skills sharp.</p>
+        </div>
     </div>
 
     <div class="footer">

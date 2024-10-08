@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BSN.Cloud Subscriptions - Reseller Training</title>
-    <!-- Google Font: Montserrat -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
             background-color: #E5E1F0; /* Digital Purple Background */
-            color: #333333; /* Dark Gray for text */
+            color: #311C6B; /* BrightSign Purple for Text */
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
             min-height: 100vh;
         }
 
@@ -29,34 +30,21 @@
         h1 {
             font-size: 36px; /* Title size */
             font-weight: bold;
-            margin: 0;
-        }
-
-        /* Button container and styles */
-        .button-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
-
-        .button-container a {
-            background-color: #701896; /* Ultraviolet */
-            color: white;
-            padding: 10px 20px;
-            font-size: 16px;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 5px;
-            margin: 0 5px;
-            display: inline-block;
-        }
-
-        .button-container a:hover {
-            background-color: #311C6B; /* BrightSign Purple on hover */
+            margin-bottom: 10px;
         }
 
         .email-button {
             background-color: #49C0FF; /* Highlighter Blue */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
         }
 
         .email-button:hover {
@@ -64,46 +52,56 @@
         }
 
         .container {
-            width: 95%;
-            max-width: 1200px;
-            margin: 0 auto;
+            width: 100%;
+            max-width: 880px;
+            margin: 20px auto;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
         }
 
-        h2 {
-            font-size: 28px;
-            font-weight: bold;
-            margin-top: 30px;
+        .box {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
             margin-bottom: 20px;
-            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .box h2 {
+            font-size: 28px;
             color: #701896; /* Ultraviolet */
-        }
-
-        .content-section {
-            margin-bottom: 40px;
-        }
-
-        .content-section h3 {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 15px;
-            color: #311C6B; /* BrightSign Purple */
-        }
-
-        .content-section p {
-            margin-bottom: 15px;
-            line-height: 1.6;
+            border-bottom: 1px solid #49C0FF; /* Highlighter Blue */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
         }
 
         ul {
-            list-style-position: inside;
-            list-style-type: square;
-            padding-left: 20px;
-            margin-bottom: 20px;
+            list-style-type: none;
+            padding: 0;
         }
 
         li {
             margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #49C0FF; /* Highlighter Blue */
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #701896; /* Ultraviolet when hovered */
+        }
+
+        .footer {
+            margin-top: auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #311C6B;
+            color: white;
         }
 
         .center-image {
@@ -116,155 +114,61 @@
             max-width: 100%;
             height: auto;
         }
-
-        hr {
-            border: 1px solid #f48377;
-            width: 100%;
-            margin: 20px 0;
-        }
-
-        .content-box {
-            background-color: #FFFFFF;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            margin: 20px auto;
-            text-align: left;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 28px;
-            }
-
-            .button-container {
-                flex-direction: column;
-            }
-
-            .button-container a {
-                margin: 5px 0;
-            }
-        }
     </style>
 </head>
 <body>
-
     <header>
         <h1>Task 3: BSN.Cloud Subscriptions</h1>
-        <div class="button-container">
-            <a href="index.html">Home</a>
-            <a href="mailto:cwu@brightsign.biz?subject=BSA-AR%20feedback&body=please include task#" class="email-button">Send Feedback</a>
-        </div>
+        <a href="mailto:cwu@brightsign.biz?subject=BSA-AR%20feedback&body=please include task#" class="email-button">Send Feedback</a>
     </header>
-    <hr />
     <div class="container">
         <div class="center-image">
             <img src="https://www.brightsign.biz/wp-content/uploads/2024/06/bsn.cloud-control_content-spaced.png" alt="BSN.Cloud Subscriptions">
         </div>
-
-        <h2>Key Points for BrightSign Resellers</h2>
-        <hr />
-
-        <div class="content-box">
-            <div class="content-section">
-                <h3>Understanding BSN.Cloud</h3>
-                <p>
-                    BSN.Cloud is BrightSign's secure and scalable cloud infrastructure that connects players to a suite of integrated services and software. As a reseller, understanding BSN.Cloud is crucial for advising customers on how to effectively manage their digital signage networks.
-                </p>
-                <ul>
-                    <li><strong>Two Service Levels:</strong> BSN.Cloud offers two main services: <em>bsn.Control</em> (free) and <em>bsn.Content</em> (paid subscription).</li>
-                    <li><strong>Integration with Partner CMS:</strong> It supports seamless integration with various Content Management Systems, providing flexibility to meet different customer needs.</li>
-                </ul>
-            </div>
-
-            <div class="content-section">
-                <h3>bsn.Control Service (Free)</h3>
-                <p>
-                    Every BrightSign player comes with the free bsn.Control service, allowing basic remote management capabilities.
-                </p>
-                <ul>
-                    <li><strong>Streamlined Player Setup:</strong> Easy activation and initial configuration.</li>
-                    <li><strong>Real-Time Monitoring:</strong> Access to player health status and diagnostics.</li>
-                    <li><strong>Choice of CMS:</strong> Customers can select their preferred CMS for content management.</li>
-                </ul>
-                <p>
-                    As a reseller, emphasize the value of bsn.Control to customers starting with digital signage or those with basic needs.
-                </p>
-            </div>
-
-            <div class="content-section">
-                <h3>bsn.Content Service (Paid Subscription)</h3>
-                <p>
-                    For advanced features, customers can upgrade to the bsn.Content service at $99/player/year.
-                </p>
-                <ul>
-                    <li><strong>Complete Content Management:</strong> Cloud-based hosting, distribution, and scheduling of content.</li>
-                    <li><strong>Advanced Network Control:</strong> Tools for grouping players, tagging, analytics, and reporting.</li>
-                    <li><strong>Smart Access Management:</strong> Customizable roles and permissions for team collaboration.</li>
-                </ul>
-                <p>
-                    Encourage customers with complex needs or larger networks to consider bsn.Content for enhanced control and efficiency.
-                </p>
-            </div>
-
-            <div class="content-section">
-                <h3>BrightAuthor:connected</h3>
-                <p>
-                    BrightAuthor:connected is a powerful authoring software that complements BSN.Cloud services.
-                </p>
-                <ul>
-                    <li><strong>Cross-Platform Availability:</strong> Available for PC, Mac, and Chrome.</li>
-                    <li><strong>Intuitive Design Tools:</strong> Allows creation of engaging digital signage presentations.</li>
-                    <li><strong>Secure Connection:</strong> Enables real-time monitoring and remote management of players.</li>
-                </ul>
-                <p>
-                    As a reseller, recommend BrightAuthor:connected to customers for a seamless content creation and management experience.
-                </p>
-                <p><a href="https://www.brightsign.biz/digital-signage-software/brightsign-connected" style="color: #49C0FF; text-decoration: none;">Download BrightAuthor:connected</a></p>
-            </div>
-
-            <div class="content-section">
-                <h3>Leveraging Partner Applications</h3>
-                <p>
-                    BrightSign partners with various CMS providers to offer integrated solutions.
-                </p>
-                <ul>
-                    <li><strong>Diverse Options:</strong> Partner applications vary in services, features, and cost.</li>
-                    <li><strong>Customer Fit:</strong> Help customers choose a CMS that aligns with their specific requirements.</li>
-                    <li><strong>Expanded Capabilities:</strong> Partner CMS solutions enhance player functionalities and network scalability.</li>
-                </ul>
-                <p>
-                    Familiarize yourself with our partner applications to provide informed recommendations to your customers.
-                </p>
-            </div>
-
-            <div class="content-section">
-                <h3>Awards and Recognition</h3>
-                <p>
-                    Highlighting BSN.Cloud's industry recognition can strengthen customer confidence.
-                </p>
-                <ul>
-                    <li><strong>2023 Stellar Service Award:</strong> BSN.Cloud won Gold for Best Supporting Content.</li>
-                    <li><strong>Trusted Solution:</strong> Acknowledged for secure infrastructure and scalable services.</li>
-                </ul>
-            </div>
-
-            <div class="content-section">
-                <h3>Key Takeaways for Resellers</h3>
-                <ul>
-                    <li>Understand the features and benefits of both bsn.Control and bsn.Content services.</li>
-                    <li>Guide customers in selecting the right service level and CMS integration based on their needs.</li>
-                    <li>Promote BrightAuthor:connected as a valuable tool for content creation and player management.</li>
-                    <li>Stay informed about partner applications to offer tailored solutions.</li>
-                    <li>Use BSN.Cloud's accolades to build trust with customers.</li>
-                </ul>
-                <p>
-                    Your expertise in these areas will enhance your value as a BrightSign reseller and contribute to customer satisfaction.
-                </p>
-            </div>
+        <div class="box">
+            <h2>Key Points for BrightSign Resellers</h2>
+            <p>
+                BSN.Cloud is BrightSign's secure and scalable cloud infrastructure that connects players to a suite of integrated services and software. As a reseller, understanding BSN.Cloud is crucial for advising customers on how to effectively manage their digital signage networks.
+            </p>
+            <ul>
+                <li><strong>Two Service Levels:</strong> BSN.Cloud offers two main services: <em>bsn.Control</em> (free) and <em>bsn.Content</em> (paid subscription).</li>
+                <li><strong>Integration with Partner CMS:</strong> It supports seamless integration with various Content Management Systems, providing flexibility to meet different customer needs.</li>
+            </ul>
+            <h2>bsn.Control Service (Free)</h2>
+            <p>
+                Every BrightSign player comes with the free bsn.Control service, allowing basic remote management capabilities.
+            </p>
+            <ul>
+                <li><strong>Streamlined Player Setup:</strong> Easy activation and initial configuration.</li>
+                <li><strong>Real-Time Monitoring:</strong> Access to player health status and diagnostics.</li>
+                <li><strong>Choice of CMS:</strong> Customers can select their preferred CMS for content management.</li>
+            </ul>
+            <h2>bsn.Content Service (Paid Subscription)</h2>
+            <p>
+                For advanced features, customers can upgrade to the bsn.Content service at $99/player/year.
+            </p>
+            <ul>
+                <li><strong>Complete Content Management:</strong> Cloud-based hosting, distribution, and scheduling of content.</li>
+                <li><strong>Advanced Network Control:</strong> Tools for grouping players, tagging, analytics, and reporting.</li>
+                <li><strong>Smart Access Management:</strong> Customizable roles and permissions for team collaboration.</li>
+            </ul>
+            <p>
+                Encourage customers with complex needs or larger networks to consider bsn.Content for enhanced control and efficiency.
+            </p>
+            <h2>BrightAuthor:connected</h2>
+            <p>
+                BrightAuthor:connected is a powerful authoring software that complements BSN.Cloud services.
+            </p>
+            <ul>
+                <li><strong>Cross-Platform Availability:</strong> Available for PC, Mac, and Chrome.</li>
+                <li><strong>Intuitive Design Tools:</strong> Allows creation of engaging digital signage presentations.</li>
+                <li><strong>Secure Connection:</strong> Enables real-time monitoring and remote management of players.</li>
+            </ul>
+            <p><a href="https://www.brightsign.biz/digital-signage-software/brightsign-connected" class="content-link">Download BrightAuthor:connected</a></p>
         </div>
     </div>
-
+    <div class="footer">
+        <p>&copy; 2024 BrightSign Authorized Reseller Certification Course</p>
+    </div>
 </body>
 </html>

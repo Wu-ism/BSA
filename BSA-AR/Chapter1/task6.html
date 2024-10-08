@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BSN.cloud Account Setup</title>
-    <!-- Google Font: Montserrat -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -34,11 +33,32 @@
             margin-bottom: 10px;
         }
 
+        .email-button {
+            background-color: #49C0FF; /* Highlighter Blue */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .email-button:hover {
+            background-color: #701896; /* Ultraviolet when hovered */
+        }
+
         .container {
-            width: 900px;
+            width: 100%;
+            max-width: 900px;
             min-height: 490px;
             padding: 20px 10px;
             margin: 20px auto;
+            display: flex;
+            flex-direction: column;
         }
 
         iframe {
@@ -60,8 +80,9 @@
         }
 
         a {
-            color: #49C0FF; /* Highlighter Blue for links */
             text-decoration: none;
+            color: #49C0FF; /* Highlighter Blue */
+            font-weight: bold;
         }
 
         a:hover {
@@ -77,14 +98,20 @@
             height: auto;
         }
 
+        .footer {
+            margin-top: auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #311C6B;
+            color: white;
+        }
     </style>
 </head>
 <body>
-
     <header>
-        <h1>BSN.cloud Account Setup</h1>
+        <h1>Task 6: BSN.cloud Account Setup</h1>
+        <a href="mailto:cwu@brightsign.biz?subject=BSA-AR%20feedback&body=please include task#" class="email-button">Send Feedback</a>
     </header>
-
     <div class="container">
         <iframe src="https://player.vimeo.com/video/505023066" allowfullscreen></iframe>
 
@@ -101,6 +128,8 @@
             </tbody>
         </table>
     </div>
-
+    <div class="footer">
+        <p>&copy; 2024 BrightSign Authorized Reseller Certification Course</p>
+    </div>
 </body>
 </html>

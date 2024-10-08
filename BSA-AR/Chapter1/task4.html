@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Needs Assessment</title>
-    <!-- Google Font: Montserrat -->
+    <title>Task 4: Digital Needs Assessment</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -21,7 +20,7 @@
         header {
             background: linear-gradient(135deg, #701896, #311C6B); /* Gradient background */
             color: white;
-            padding: 20px;
+            padding: 10px;
             text-align: center;
             position: sticky;
             top: 0;
@@ -34,23 +33,49 @@
             margin-bottom: 10px;
         }
 
+        .email-button {
+            background-color: #49C0FF; /* Highlighter Blue */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .email-button:hover {
+            background-color: #701896; /* Ultraviolet when hovered */
+        }
+
         .container {
             width: 100%;
-            max-width: 1200px;
+            max-width: 880px;
             margin: 20px auto;
             padding: 20px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
         }
 
-        h2 {
+        .box {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .box h2 {
             font-size: 28px;
+            color: #701896; /* Ultraviolet */
             border-bottom: 1px solid #49C0FF; /* Highlighter Blue */
-            text-align: center;
             padding-bottom: 10px;
-            margin-bottom: 30px;
-            color: #311C6B;
+            margin-bottom: 20px;
+            text-align: center;
         }
 
         iframe {
@@ -95,40 +120,39 @@
             background-color: #311C6B;
             color: white;
         }
-
     </style>
 </head>
 <body>
-
     <header>
-        <h1>Digital Needs Assessment</h1>
+        <h1>Task 4: Digital Needs Assessment</h1>
+        <a href="mailto:cwu@brightsign.biz?subject=BSA-AR%20feedback&body=please include task#" class="email-button">Send Feedback</a>
     </header>
-
     <div class="container">
-        <h2>Video Overview</h2>
-        <iframe src="https://player.vimeo.com/video/729359053" allowfullscreen></iframe>
-
-        <h2>Project Planning</h2>
-        <table>
-            <tbody>
-                <tr>
-                    <td>
-                        Before you begin a project, it's essential to interview the client about their specific needs. Ask questions about the following topics to develop an accurate quote for the required materials (components, software, hardware, and networking) and the labor necessary to bring their vision to life. Proper scoping of the project will help you provide a precise quote.
-                        <br /><br />
-                        For example, if the deployment requires 5 players or fewer, we recommend automatically provisioning players via the purple screen. You will learn how to use this method in the following exercise. However, if you need to provision many players, we offer bulk provisioning tools you can use.
-                        <br /><br />
-                        Another example would be a customer who wants to use a specific partner application. It's easy to set up a network to automatically provision a player to run on a preferred CMS when the player is added to the network.
-                        <br /><br />
-                        <strong>Bottom line:</strong> Upfront planning of a deployment will help you sell more players and support more customers in the long run.
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="box">
+            <h2>Video Overview</h2>
+            <iframe src="https://player.vimeo.com/video/729359053" allowfullscreen></iframe>
+        </div>
+        <div class="box">
+            <h2>Project Planning</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            Before you begin a project, it's essential to interview the client about their specific needs. Ask questions about the following topics to develop an accurate quote for the required materials (components, software, hardware, and networking) and the labor necessary to bring their vision to life. Proper scoping of the project will help you provide a precise quote.
+                            <br /><br />
+                            For example, if the deployment requires 5 players or fewer, we recommend automatically provisioning players via the purple screen. You will learn how to use this method in the following exercise. However, if you need to provision many players, we offer bulk provisioning tools you can use.
+                            <br /><br />
+                            Another example would be a customer who wants to use a specific partner application. It's easy to set up a network to automatically provision a player to run on a preferred CMS when the player is added to the network.
+                            <br /><br />
+                            <strong>Bottom line:</strong> Upfront planning of a deployment will help you sell more players and support more customers in the long run.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-
     <div class="footer">
-        <p>&copy; 2024 BrightSign Authorized Reseller Program</p>
+        <p>&copy; 2024 BrightSign Authorized Reseller Certification Course</p>
     </div>
-
 </body>
 </html>
