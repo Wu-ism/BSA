@@ -1,157 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Authorized Reseller Program Overview</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: #E5E1F0; /* Digital Purple Background */
-            color: #311C6B; /* BrightSign Purple for Text */
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
+<!DOCTYPE html><html><head><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"><style>
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #E5E1F0; /* Digital Purple Background */
+        color: #311C6B; /* BrightSign Purple for Text */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
 
-        header {
-            background: linear-gradient(135deg, #701896, #311C6B); /* Gradient background */
-            color: white;
-            padding: 10px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+    header {
+        background: linear-gradient(135deg, #701896, #311C6B); /* Gradient background */
+        color: white;
+        padding: 10px;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
 
-        h1 {
-            font-size: 36px; /* Title size */
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
+    h1 {
+        font-size: 36px; /* Title size */
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
 
-        .email-button {
-            background-color: #49C0FF; /* Highlighter Blue */
-            border: none;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            border-radius: 5px;
-            margin-top: 10px;
-            cursor: pointer;
-        }
+    .container {
+        flex: 1;
+        width: 100%;
+        margin: auto;
+        padding: 20px;
+        max-width: 1200px; /* Container size */
+        display: flex;
+        justify-content: space-between;
+    }
 
-        .email-button:hover {
-            background-color: #701896; /* Ultraviolet when hovered */
-        }
+    .text-content {
+        width: 50%;
+    }
 
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-        }
+    ul {
+        margin-bottom: 40px;
+    }
 
-        .box {
-            background-color: white;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        }
+    li {
+        margin-bottom: 15px;
+    }
 
-        .box h2 {
-            font-size: 28px;
-            color: #701896; /* Ultraviolet */
-            border-bottom: 1px solid #49C0FF; /* Highlighter Blue */
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
+    hr {
+        border: 1px solid #f48377;
+        width: 100%;
+        margin: 20px 0;
+    }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
+    .image-container {
+        width: 50%; /* Allocate half space for the image */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -360px; /* Adjust the margin to move the image up */
+    }
 
-        li {
-            margin-bottom: 10px;
-            font-size: 18px;
-        }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 
-        a {
-            text-decoration: none;
-            color: #49C0FF; /* Highlighter Blue */
-            font-weight: bold;
-        }
+            /* Home button styling */
+            .home-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #701896; /* Ultraviolet */
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        text-align: center;
+    }
 
-        a:hover {
-            color: #701896; /* Ultraviolet when hovered */
-        }
+    .home-button:hover {
+        background-color: #311C6B; /* BrightSign Purple on hover */
+    }
 
-        .footer {
-            margin-top: auto;
-            padding: 10px;
-            text-align: center;
-            background-color: #311C6B;
-            color: white;
-        }
-    </style>
-</head>
-<body>
+    .button-container {
+        text-align: center;
+        margin-top: 40px;
+    }
 
-    <header>
-        <h1>Authorized Reseller Program Overview</h1>
-        <a href="mailto:cwu@brightsign.biz?subject=BSA-AR%20feedback&body=please include task#" class="email-button">Send Feedback</a>
-    </header>
-
-    <div class="container">
-        <div class="box">
-            <h2>Chapter 1: Introduction to BrightSign and the Reseller Role</h2>
-            <p>Get to know BrightSign and what it means to be an Authorized Reseller. Understand your responsibilities and how digital signage fits into various industries.</p>
-        </div>
-
-        <div class="box">
-            <h2>Chapter 2: BrightSign Pricing and Sales Essentials</h2>
-            <p>Learn the basics of BrightSign’s pricing structure and how to manage sales. Discover the Minimum Advertised Price (MAP) policy and how it impacts your business.</p>
-        </div>
-
-        <div class="box">
-            <h2>Chapter 3: Assessing Client Needs and Selling Solutions</h2>
-            <p>Master the art of identifying client needs and recommending the right BrightSign solutions. Use consultative selling techniques to ensure your clients get the perfect fit.</p>
-        </div>
-
-        <div class="box">
-            <h2>Chapter 4: Setting Up and Configuring BrightSign Players</h2>
-            <p>Learn how to set up BrightSign players step-by-step. From network setup to troubleshooting, we’ve got you covered to ensure a smooth installation process.</p>
-        </div>
-
-        <div class="box">
-            <h2>Chapter 5: Creating and Managing Content</h2>
-            <p>Find out how to create and publish content on BrightSign players. Explore tools like BrightAuthor and BSN.cloud to manage digital signage content effectively.</p>
-        </div>
-
-        <div class="box">
-            <h2>Chapter 6: Responsibilities and Customer Support</h2>
-            <p>Understand your obligations as a reseller and how to provide great customer service. Learn how to support your clients through installations and product usage.</p>
-        </div>
-
-        <div class="box">
-            <h2>Chapter 7: Continuing Your BrightSign Learning Journey</h2>
-            <p>Keep growing with BrightSign! Discover ongoing training resources and how to stay updated with new products and features to keep your skills sharp.</p>
-        </div>
-    </div>
-
-    <div class="footer">
-        <p>&copy; 2024 BrightSign Authorized Reseller Certification Course</p>
-    </div>
-
+</style></head><body>
+<header>
+<h1>BrightSign Authorized Reseller Program</h1>
+</header><hr />
+<div class="container">
+<div class="text-content">
+<p>This course covers:</p>
+<ul>
+<li>Authorized Reseller Overview</li>
+<li>Player and Subscription Pricing Policy</li>
+<li>Digital Needs Assessment</li>
+<li>Account Setup</li>
+<li>Basic Player Setup</li>
+<li>Provisioning with a Partner Application</li>
+<li>Publishing to a player for the first time</li>
+<li>Reseller Obligations</li>
+<li>Sales and Orders</li>
+<li>Training</li>
+</ul>
+<hr />
+<p>In this chapter, we'll cover player pricing, our Minimum Advertised Price (MAP) policy, assessing customer needs, the basics of player setup and content publishing, your obligations as a reseller, ordering products, and training resources.</p>
+<p>Following this chapter is a section on BrightSign support and a brief quiz. Upon completion of this course, you'll become a BrightSign Authorized Reseller.</p>
+<p><strong>Please send the certificate of completion to your distributor as proof of your Authorized Reseller status.</strong></p>
+</div>
+<div class="image-container"><img src="https://brightsignacademy.smarteru.com/TaskItems/39852/auth.png" alt="Authorized Reseller Certificate" /></div>
+</div>
 </body>
-</html>
+</html></body></html>
