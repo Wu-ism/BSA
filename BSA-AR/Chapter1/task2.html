@@ -1,154 +1,124 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minimum Advertised Price Policy</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: #E5E1F0; /* Digital Purple Background */
-            color: #311C6B; /* BrightSign Purple for Text */
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
+<!DOCTYPE html><html><head><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"><style>
+    /* General Styling */
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #E5E1F0; /* Digital Purple Background */
+        color: #311C6B; /* BrightSign Purple for Text */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
 
-        header {
-            background: linear-gradient(135deg, #701896, #311C6B); /* Gradient background */
-            color: white;
-            padding: 10px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+    /* Header */
+    header {
+        background: linear-gradient(135deg, #701896, #311C6B); /* Gradient background */
+        color: white;
+        padding: 20px;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
 
+    h1 {
+        font-size: 36px; /* Title size */
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    /* Main Content Container */
+    .container {
+        flex: 1;
+        width: 90%; /* Use relative width for responsiveness */
+        margin: auto;
+        padding: 20px;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box; /* Include padding in width calculation */
+    }
+
+    .content-box {
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: left;
+    }
+
+    .content-box p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    td {
+        padding: 15px;
+        vertical-align: middle;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .content-box a {
+        color: #49C0FF; /* Highlighter Blue for links */
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .content-box a:hover {
+        color: #701896; /* Ultraviolet when hovered */
+    }
+
+    /* Important Box Styling */
+    .important-box {
+        background-color: #ffedcc; /* Light yellow background for emphasis */
+        border-left: 5px solid #f48377; /* Highlight border */
+        border-radius: 8px;
+        padding: 20px;
+        margin-top: 20px;
+        color: #311C6B; /* BrightSign Purple for Text */
+    }
+
+    .important-box strong {
+        font-size: 20px;
+        color: #701896; /* Ultraviolet for emphasis */
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
         h1 {
-            font-size: 36px; /* Title size */
-            font-weight: bold;
-            margin-bottom: 10px;
+            font-size: 28px; /* Reduce heading size on smaller screens */
         }
 
-        .email-button {
-            background-color: #49C0FF; /* Highlighter Blue */
-            border: none;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            border-radius: 5px;
-            margin-top: 10px;
-            cursor: pointer;
-        }
-
-        .email-button:hover {
-            background-color: #701896; /* Ultraviolet when hovered */
-        }
-
-        .container {
-            width: 100%;
-            max-width: 880px;
-            margin: 20px auto;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .box {
-            background-color: white;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .box h2 {
-            font-size: 28px;
-            color: #701896; /* Ultraviolet */
-            border-bottom: 1px solid #49C0FF; /* Highlighter Blue */
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 10px;
-            font-size: 18px;
-        }
-
-        a {
-            text-decoration: none;
-            color: #49C0FF; /* Highlighter Blue */
-            font-weight: bold;
-        }
-
-        a:hover {
-            color: #701896; /* Ultraviolet when hovered */
-        }
-
-        .footer {
-            margin-top: auto;
+        td {
+            font-size: 16px; /* Adjust table font size for smaller screens */
             padding: 10px;
-            text-align: center;
-            background-color: #311C6B;
-            color: white;
         }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Task 2: Minimum Advertised Price Policy</h1>
-        <a href="mailto:cwu@brightsign.biz?subject=BSA-AR%20feedback&body=please include task#" class="email-button">Send Feedback</a>
-    </header>
-    <div class="container">
-        <div class="box">
-            <h2>Minimum Advertised Price Policy Overview</h2>
-            <p>
-                BrightSign has implemented a <strong>Minimum Advertised Price (MAP) Policy</strong> to protect the investments of our resellers and maintain the integrity of our brand. This policy requires all resellers to advertise BrightSign products at or above 100% of the list prices as listed on BrightSign’s official web store.
-            </p>
-            <p>
-                <strong>Key Points of the MAP Policy:</strong>
-            </p>
-            <ul>
-                <li>
-                    The policy applies to all resellers advertising BrightSign products online, including websites, email campaigns, third-party platforms, and printed media.
-                </li>
-                <li>
-                    Resellers must not advertise prices lower than the official list prices. Current pricing can be found on the <a href="https://www.brightsign.biz/legal/map-policy" class="content-link">MAP policy page</a>.
-                </li>
-                <li>
-                    While the MAP Policy governs advertised prices, resellers are free to set their actual resale prices. This means you can sell products at any price, but advertised prices must comply with the MAP Policy.
-                </li>
-                <li>
-                    If a reseller violates the MAP Policy, BrightSign may take actions such as canceling orders, restricting future orders, or suspending the reseller's account.
-                </li>
-                <li>
-                    Resellers are required to inform any third-party internet sellers of the MAP Policy and notify BrightSign of their contact information.
-                </li>
-                <li>
-                    All questions regarding the MAP Policy should be directed to <a href="mailto:legal@brightsign.biz" class="content-link">legal@brightsign.biz</a>.
-                </li>
-            </ul>
-            <p>
-                BrightSign reserves the right to monitor advertised prices and enforce this policy unilaterally. The MAP Policy is subject to change or cancellation at BrightSign's sole discretion.
-            </p>
-            <p>
-                For detailed information, please review the full MAP Policy on our <a href="https://www.brightsign.biz/legal/map-policy" class="content-link">website</a>.
-            </p>
-        </div>
-    </div>
-    <div class="footer">
-        <p>&copy; 2024 BrightSign Authorized Reseller Certification Course</p>
-    </div>
+
+        .important-box {
+            font-size: 16px;
+            padding: 15px;
+        }
+    }
+</style></head><body>
+<header>
+<h1>Digital Signage Player Pricing</h1>
+</header>
+<div class="container">
+<div class="content-box">
+<p>BrightSign maintains a Minimum Advertised Price (MAP) policy. As an Authorized Reseller, you agree to enforce this policy by advertising BrightSign products at or above the minimum price. The MAP for all BrightSign products shall be no less than the full list prices for those products set by the current listings on BrightSign’s company <a href="https://www.brightsign.biz/legal/map-policy">website</a>.</p>
+<p>Prices are subject to change, so please check before quoting a price. You can check the current pricing <a href="https://store.brightsign.biz">here</a>.</p>
+</div>
+<!-- Important Section -->
+<div class="important-box"><strong>Important:</strong> Make sure to verify updated pricing regularly to avoid quoting out-of-date prices. This helps maintain the integrity of BrightSign’s pricing policy.</div>
+</div>
 </body>
-</html>
+</html></body></html>
